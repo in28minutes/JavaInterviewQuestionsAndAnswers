@@ -2,12 +2,12 @@
 
 ##Basics 
  - [Basics of Objects and Classes](docs/basics-class-object.md)
- - [Arrays](docs/arrays.md)
- - [Control Flow - If, Switch, for and while](docs/control-flow-if-switch-for-while)
- - [Operators](docs/operators.md)
  - [Variables - including initialization](docs/variables-initialization-and-more.md)
+ - [Operators](docs/operators.md)
+ - [Control Flow - If, Switch, for and while](docs/control-flow-if-switch-for-while)
  - [String, String Buffer and String Builder](docs/string-and-string-buffer-builder.md)
  - [Wrapper classes](docs/wrapper-classes.md)
+ - [Arrays](docs/arrays.md)
 
 ##Access and Non Access Modifiers
  - [Class Access Modifiers - Default, Public, Private and Protected](docs/modifiers-class-access.md)
@@ -21,12 +21,12 @@
  - [Abstract Class](docs/abstract-class.md)
  - [Interfaces](docs/interfaces.md)
  - [Constructors](docs/constructors.md)
+ - [Initializers](docs/initializers.md)
  - [More about OOPS](docs/oops-advanced.md)
  - [Inner Classes](docs/inner-class.md)
  
 ##Advanced Stuff
  - [Collections](docs/collections.md)
- - [Initializers](docs/initializers.md)
  - [Enum](docs/enum.md)
  - [Exception Handling](docs/exception-handling.md)
  - [Files](docs/file-io.md)
