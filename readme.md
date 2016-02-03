@@ -37,3 +37,11 @@
  - [Serialization](docs/serialization.md)
  - [Threads and Synchronization](docs/threads-and-synchronization.md)
  - [Others](docs/others.md)
+
+#Frameworks
+- [Web Application Basics](https://github.com/in28minutes/BasicWebServletsIn28Minutes)
+- [Spring](https://github.com/in28minutes/SpringIn28Minutes)
+- [Spring MVC](https://github.com/in28minutes/SpringMvcStepByStep)
+- [Struts](https://github.com/in28minutes/Struts2StepByStep)
+- [Java EE Design Patterns](https://github.com/in28minutes/Java-EE-Design-Patterns)
+- [JPA/Hibernate](https://github.com/in28minutes/HibernateJPAStepByStep)
