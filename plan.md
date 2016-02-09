@@ -27,11 +27,11 @@
  - [Final Modifier](docs/modifiers-nonaccess-final.md)
  - [Static Modifier](docs/modifiers-nonaccess-static)
 
-#Object Oriented Concepts : Advanced
+##Object Oriented Concepts : Advanced
  - [More about OOPS](docs/oops-advanced.md)
  - [Inner Classes](docs/inner-class.md)
 
-## Object class
+##Object class
  - [Object and its Methods](docs/object-methods.md)
  - [Constructors](docs/constructors.md)
  - [Initializers](docs/initializers.md)
