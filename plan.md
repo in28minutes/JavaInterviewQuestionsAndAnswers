@@ -9,7 +9,7 @@
  - [Interfaces](docs/interfaces.md)
  - [Abstract Class](docs/abstract-class.md)
 
-##Basics
+##Java Language Basics
  - [Wrapper classes](docs/wrapper-classes.md)
  - [String, String Buffer and String Builder](docs/string-and-string-buffer-builder.md)
  - [Arrays](docs/arrays.md)
