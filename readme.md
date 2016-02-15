@@ -18,7 +18,7 @@
 
 ##Classloaders and Types
 - [Image](images/JavaClassLoaders.png)
-- A Java program is made up of a number of custom classes (written by programmers like us) and core  classes (which come preUpackaged with Java). When a program is executed, JVM needs to load the  content of all the needed class. JVM uses a ClassLoader to find the classes. 
+- A Java program is made up of a number of custom classes (written by programmers like us) and core  classes (which come pre-packaged with Java). When a program is executed, JVM needs to load the  content of all the needed class. JVM uses a ClassLoader to find the classes. 
 - System Class Loader : Loads all classes from CLASSPATH 
 - Extension Class Loader : Loads all classes from extension directory 
 - Bootstrap Class Loader : Loads all the Java core files 
@@ -26,34 +26,35 @@
 
 #Language Basics
 ##Why do we need Wrapper Classes?
-- [Code](src/main/java/com/in28minutes/java/wrapper/WrapperExamples.java)
-- See TODO WrapperExamples.java
+- [Example 1](src/main/java/com/in28minutes/java/wrapper/WrapperExamples.java)
 - A wrapper class wraps (encloses) around a data type and gives it an object appearance
 - Wrapper: Boolean,Byte,Character,Double,Float,Integer,Long,Short 
 - Primitive: boolean,byte,char ,double, float, int , long,short
+- Examples of creating wrapper classes are listed below.
+  - Integer number = new Integer(55);//int;
+  - Integer number2 = new Integer("55");//String
+  - Float number3 = new Float(55.0);//double argument  
+  - Float number4 = new Float(55.0f);//float argument  
+  - Float number5 = new Float("55.0f");//String 
+  - Character c1 = new Character('C');//Only char constructor 
+  - Boolean b = new Boolean(true); 
 - Reasons
   - null is a possible value
   - use it in a Collection
   - Object like creation from other types.. like String
 
-Are instances of Wrapper Classes Immutable?
+##Are instances of Wrapper Classes Immutable?
+- What is Immutability?
 - Wrapper classes are final and immutable. 
-- Examples of creating wrapper classes are listed below.
-  - Integer number = new Integer(55);//int;
-  - Integer number2 = new Integer("55");//String
-  - Float number3 = new Float(55.0);//double argument  
-  - Float number4 = new Float(55.0f);//float argument  Float number5 = new Float("55.0f");//String 
-  - Character c1 = new Character('C');//Only char constructor 
-  - Boolean b = new Boolean(true); 
 
-What is Auto Boxing?
+##What is Auto Boxing?
 ```
 	// Auto Boxing
 	Integer ten = 10;//new Integer(10);
 	ten++;// allowed. Java does had work behind the screen for us
 ```
-Boxing and new instances 
-Auto  Boxing  helps  in  saving  memory  by  reusing  already  created  Wrapper  objects.  However  wrapper  classes created using new are not reused. 
+ 
+- Boxing and new instances - Auto  Boxing  helps  in  saving  memory  by  reusing  already  created  Wrapper  objects.  However  wrapper  classes created using new are not reused. 
 ```
 		// Two wrapper objects created using new are not same object
 		Integer nineA = new Integer(9);
@@ -67,8 +68,9 @@ Auto  Boxing  helps  in  saving  memory  by  reusing  already  created  Wrapper 
 		System.out.println(nineC == nineD);// true
 		System.out.println(nineC.equals(nineD));// true
 ```
+
 #Strings
-Immutability of Strings
+##Are String's immutable?
 ```
 		//Strings are immutable
 		String str3 = "value1";
@@ -80,18 +82,18 @@ Immutability of Strings
 		System.out.println(concat); //value1value2
 ```
 
-String vs StringBuffer vs StringBuilder
+##String vs StringBuffer vs StringBuilder
 - String is Immutable
 - StringBuilder is not synchronized
 - Performance
-- see TODO StringBufferBuilderExamples.java
+- [Example 1](src/main/java/com/in28minutes/java/string/StringBufferBuilderExamples.java)
 
 #OOPS Basics
 Inheritance
-- EveryClassExtendsObject
-- See InheritanceExamples
-- See [Inheritance and Polymorphism](docs/inheritance-and-polymorphism.md)
-- src/main/java/com/in28minutes/java/oops/inheritance/reuse
+- Basics of Inheritance
+- Every Class Extends Object - See [Example](src/main/java/com/in28minutes/java/oops/inheritance/EveryClassExtendsObject.java)
+- [Example 1](src/main/java/com/in28minutes/java/oops/inheritance/InheritanceExamples.java)
+- Reuse Through Inheritance - [TestReuse.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/TestReuse.java) [Hero.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Hero.java) [Actor.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Actor.java)[Comedian.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Comedian.java)
 Method OverLoading
 - src/main/java/com/in28minutes/java/oops/inheritance/overloading
 Method OverRiding
