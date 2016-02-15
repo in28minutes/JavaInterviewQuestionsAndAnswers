@@ -17,11 +17,11 @@ interface ExampleInterface1 {
 	void method1();// method1 is public and abstract
 	// private void method6();//COMPILER ERROR!
 
-	/*
-	 * //Interface cannot have body (definition) of a method //This method,
-	 * uncommented, gives COMPILER ERROR! void method5() {
-	 * System.out.println("Method5"); }
-	 */
+	//Interface can have a default definition of method.
+	//NEW FEATURE
+	default void method5() {
+		System.out.println("Method5");
+	}
 }
 
 interface ExampleInterface2 {
