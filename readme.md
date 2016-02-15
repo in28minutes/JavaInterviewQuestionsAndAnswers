@@ -1,13 +1,13 @@
 #Platform
-Java and Platform Independence
+##Java and Platform Independence
 - [Image](images/JavaPlatFormIndependence.png)
 - Build once, Run anywhere
-- Java is one of the most popular platform  independent  languages.  Once  we  compile  a  java  program  and  build  a  jar,  we  can  run  the  jar  (compiled  java program) in any Operating System U where a JVM is installed. 
-- JVM, ByteCode
-- TODO JavaPlatFormIndependence.png
+- Java is one of the most popular platform  independent  languages.  Once  we  compile  a  java  program  and  build  a  jar,  we  can  run  the  jar  (compiled  java program) in any Operating System where a JVM is installed. 
+- What is ByteCode?
 - The  executable  instructions  are  different  in  different  operating  systems.  So,  there  are  different  JVM s  for  different  operating  systems.  A  JVM  for  windows  is  different  from  a  JVM  for  mac. 
-JDK vs JVM VS JRE
-- See jvm-jre-jdk.jpg
+
+##JDK vs JVM VS JRE
+- [Image](images/jvm-jre-jdk.jpg)
 - JVM
   - Virtual machine that run the Java bytecode.
   - Makes java portable.
@@ -16,15 +16,17 @@ JDK vs JVM VS JRE
 - JDK
   - JRE + Compilers + Debuggers
 
-Classloaders and Types
-- TODO JavaClassLoaders.png
+##Classloaders and Types
+- [Image](images/JavaClassLoaders.png)
 - A Java program is made up of a number of custom classes (written by programmers like us) and core  classes (which come preUpackaged with Java). When a program is executed, JVM needs to load the  content of all the needed class. JVM uses a ClassLoader to find the classes. 
-- System Class Loader U Loads all classes from CLASSPATH 
-- Extension Class Loader U Loads all classes from extension directory 
-- Bootstrap Class Loader U Loads all the Java core files 
+- System Class Loader : Loads all classes from CLASSPATH 
+- Extension Class Loader : Loads all classes from extension directory 
+- Bootstrap Class Loader : Loads all the Java core files 
 - When JVM needs to find a class, it starts with System Class Loader. If it is not found, it checks with  Extension Class Loader. If it not found, it goes to the Bootstrap Class Loader. If a class is still not found, a  ClassNotFoundException is thrown. 
 
-Why do we need Wrapper Classes?
+#Language Basics
+##Why do we need Wrapper Classes?
+- [Code](src/main/java/com/in28minutes/java/wrapper/WrapperExamples.java)
 - See TODO WrapperExamples.java
 - A wrapper class wraps (encloses) around a data type and gives it an object appearance
 - Wrapper: Boolean,Byte,Character,Double,Float,Integer,Long,Short 
