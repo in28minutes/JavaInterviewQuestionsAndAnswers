@@ -149,35 +149,56 @@
 - [Final Member Variable](src/main/java/com/in28minutes/java/membermodifiers/nonaccess/FinalMemberModifiersExample.java)
 
 ##Member Access Modifiers
-- See Package com.in28minutes.java.membermodifiers.access
-Class Access Modifiers
-- See Package com.in28minutes.java.classmodifiers.defaultaccess
-Static Modifier
-- See StaticModifierExamples.java
-Constructors
-- See ConstructorExamples.java
-Static Initializers
-- See InitializerExamples.java
+- [Examples](src/main/java/com/in28minutes/java/membermodifiers/access)
 
-Why do we need Collections?
+##Class Access Modifiers
+- [Examples](src/main/java/com/in28minutes/java/classmodifiers/)
+- TODO - A few classes missing here?????????????????
+
+##Static Modifier
+- [Example](src/main/java/com/in28minutes/java/membermodifiers/nonaccess/StaticModifierExamples.java)
+
+#Constructors
+##Constructors
+- [Example](src/main/java/com/in28minutes/java/object/constructors/ConstructorExamples.java)
+##Static Initializers
+- [Example](src/main/java/com/in28minutes/java/initializers/InitializerExamples.java)
+
+#Collections
+##Why do we need Collections?
 - Arrays are static in Size.
-Hierarchy of Collection Interface?
-- CollectionHierarchy.java
-List
-- See CollectionExamples.java for all examples
-Map
-Set
-List vs Map vs Set
-Comparing Objects in Collections
-Collection Keywords : 
-Hash - No Order is Maintained
-Tree - Collection is Sorted
-Linked - Insertion Order Maintained
-Set - No Duplicates
-HashSet vs TreeSet vs LinkedHashSet
-TreeMap vs HashMap
+##Hierarchy of Collection Interface?
+- [Hierarchy](src/main/java/com/in28minutes/java/collections/CollectionHierarchy.java)
 
-Concurrency in Collections
+##List
+- [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
+
+##Map
+- [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
+
+##Set
+- [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
+
+##List vs Map vs Set
+- [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
+
+##Comparing Objects in Collections
+- [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
+
+##Collection Keywords : 
+- Hash - No Order is Maintained
+- Tree - Collection is Sorted
+- Linked - Insertion Order Maintained
+- Set - No Duplicates
+
+##HashSet vs TreeSet vs LinkedHashSet
+- [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
+
+##TreeMap vs HashMap
+- [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
+
+##Concurrency in Collections
+- TODO - More Code Examples
 - Synchronized collections are implemented using synchronized methods and synchronized blocks. Only one thread can executing any of the synchronized code at a given point in time. This places severe restrictions on the concurrency of threads – thereby affecting performance of the application. All the pre Java 5 synchronized collections (HashTable & Vector, for example) use this approach. Post Java 5, collections using new approaches to synchronization are available in Java. These are called concurrent collections. More details below.
 - Copy on Write
   - All values in collection are stored in an internal immutable (not-changeable) array. A new array is created if there is any modification to the collection. 
@@ -191,11 +212,12 @@ Concurrency in Collections
   - When 10 methods are declared as synchronized, only one of them is executed by any of the threads at any point in time.  This has severe performance impact.  
   - Another new approach introduced in Java 5 is to use lock and unlock methods. Lock and unlock methods are used to divide methods into different blocks and help enhance concurrency. The 10 methods can be divided into different blocks, which can be synchronized based on different variables.
 
-Fail Safe vs Fail Fast
-  - Fail Fast Iterators throw a ConcurrentModificationException if there is a modification to the underlying collection is modified. This was the default behavior of the synchronized collections of pre Java 5 age.
-  - Fail Safe Iterators do not throw exceptions even when there are changes in the collection. This is the default behavior of the concurrent collections, introduced since Java 5.
+##Fail Safe vs Fail Fast
+- TODO - Code Examples
+- Fail Fast Iterators throw a ConcurrentModificationException if there is a modification to the underlying collection is modified. This was the default behavior of the synchronized collections of pre Java 5 age.
+- Fail Safe Iterators do not throw exceptions even when there are changes in the collection. This is the default behavior of the concurrent collections, introduced since Java 5.
 
-Atomic Operations
+##Atomic Operations
 - Atomic Access Java Tutorial states “In programming, an atomic action is one that effectively happens all at once. An atomic action cannot stop in the middle: it either happens completely, or it doesn't happen at all. No side effects of an atomic action are visible until the action is complete”.
 - Let’s assume we are writing a multi threaded program. Let’s create an int variable i.  Even a small operation, like i++ (increment), is not thread safe. i++ operation involves three steps.
   - Read the value which is currently stored in i 
@@ -205,41 +227,76 @@ Atomic Operations
 - To prevent these, Java provides atomic operations. Atomic operations are performed as a single unit without interference from other threads ensuring data consistency. 
 - A good example is AtomicInteger. To increment a value of AtomicInteger, we use the  incrementAndGet() method. Java ensures this operation is Atomic.
 
-Why do we use Generics?
+##Why do we use Generics?
 - Generics are used to create Generic Classes and Generic methods which can work with different Types(Classes).
-- See GenericsExamples,GenericsExamples2 and GenericsExamples3 in com.in28minutes.java.generics
-What are the restrictions that can be enforced on Generics?
-- See GenericsExamples,GenericsExamples2 and GenericsExamples3 in com.in28minutes.java.generics
+- [Example 1](src/main/java/com/in28minutes/java/generics/GenericsExamples.java)
 
-Exception Handling in Java
-- See [Exception Handling](docs/exception-handling.md)
-Finally and when is code in finally not executed?
-New Exception Handling Features
-Puzzles on Exception Handling
-Hierarchy of Exception Related Classes
-When do you use Custom Exception?
-When do you use a Checked Exception?
+##What are the restrictions that can be enforced on Generics?
+- [Example 2](src/main/java/com/in28minutes/java/generics/GenericsExamples2.java)
+- [Example 3](src/main/java/com/in28minutes/java/generics/GenericsExamples3.java)
 
-Need for Threads.
--- See five examples in com.in28minutes.java.threads
-Different States of a Thread
-Synchronization and Join Methods
-Executor Service
+#Exception Handling in Java
 
-Coupling
+## Basics
+- [Example 1](src/main/java/com/in28minutes/java/exceptionhandling/ExceptionHandlingExample1.java)
+
+## Finally and when is code in finally not executed?
+- [Example 2](src/main/java/com/in28minutes/java/exceptionhandling/ExceptionHandlingExample2.java)
+
+## New Exception Handling Features
+- TODO - Code Examples
+
+## Puzzles on Exception Handling
+- TODO
+
+## Hierarchy of Exception Related Classes
+- [Example 1](src/main/java/com/in28minutes/java/exceptionhandling/ExceptionHandlingExample1.java)
+- [Example 2](src/main/java/com/in28minutes/java/exceptionhandling/ExceptionHandlingExample2.java)
+
+## When do you use Custom Exception?
+- When you want to define your own exceptions TODO
+
+## When do you use a Checked Exception?
+- When the calling method can do something about the exception being thrown TODO
+- In Spring, Most exceptions are unchecked.
+
+#Threads
+
+##Need for Threads.
+- [Basic Example](src/main/java/com/in28minutes/java/threads/ThreadExamples.java)
+
+##Different States of a Thread
+- [Basic Example](src/main/java/com/in28minutes/java/threads/ThreadExamples.java)
+
+##Synchronization and Join Methods
+- [Synchronized Example](src/main/java/com/in28minutes/java/threads/ThreadExampleSynchronized.java)
+- [Wait and Notify](src/main/java/com/in28minutes/java/threads/ThreadWaitAndNotify.java)
+- [Deadlock Example](src/main/java/com/in28minutes/java/threads/ThreadDeadlock.java)
+
+##Executor Service
+- TODO
+
+#Advanced OOPS
+
+##Coupling
 - See [More about OOPS](docs/oops-advanced.md)
-Cohesion
+
+##Cohesion
 - [More about OOPS](docs/oops-advanced.md)
-Solid Principles
-Object class
-- see ObjectExamples.java
-toString method
-- See TODO ToStringExamples.java
-hashCode method
-- See TODO EqualsHashCodeExamples.java
-HashCode's are used in hashing to decide which group (or bucket) an object should be placed into. A group of object's might share the same hashcode.
-- See TODO EqualsHashCodeExamples.java 
-- The implementation of hash code decides effectiveness of Hashing. A good hashing function evenly distributes object's into different groups (or buckets).
+
+##Solid Principles
+- TODO
+
+##Object class
+- TODO ObjectExamples.java missing
+
+##toString method
+- [Example](src/main/java/com/in28minutes/java/object/ToStringExamples.java)
+
+##hashCode method
+- [Example](src/main/java/com/in28minutes/java/object/EqualsHashCodeExamples.java)
+- HashCode's are used in hashing to decide which group (or bucket) an object should be placed into. A group of object's might share the same hashcode.
+- The implementation of hashcode decides effectiveness of Hashing. A good hashing function evenly distributes object's into different groups (or buckets).
 - A good hashCode method should have the following properties 
   - If obj1.equals(obj2) is true, then obj1.hashCode() should be equal to obj2.hashCode()
   - obj.hashCode() should return the same value when run multiple times, if values of obj used in
@@ -247,8 +304,8 @@ equals() have not changed.
   - If obj1.equals(obj2) is false, it is NOT required that obj1.hashCode() is not equal to
 obj2.hashCode(). Two unequal objects MIGHT have the same hashCode.
 
-equals method
-- See TODO EqualsHashCodeExamples.java 
+##equals method
+- [Example](src/main/java/com/in28minutes/java/object/EqualsHashCodeExamples.java)
 - Any equals implementation should satisfy these properties:
   - Reflexive. For any reference value x, x.equals(x) returns true.
   - Symmetric. For any reference values x and y, x.equals(y) should return true if and only ify.equals(x) returns true.
@@ -256,82 +313,74 @@ equals method
   - Consistent. For any reference values x and y, multiple invocations of x.equals(y) consistently return true or consistently return false, if no information used in equals is modified.
   - For any non-null reference value x, x.equals(null) should return false.
 
-New Features in Java 5
-New Features in Java 6
-New Features in Java 7
-New Features in Java 8
-Annotations
-Examples of Design Patterns used in Java
-Reflection
-Assert
-Garbage Collection and finalize
-Which datatype should we use for financial calculations?
-What is a Market Interface?
-Need for Serialization
+#Java New Features
 
-Why do we need an Enum?
-- Refer 3 Files enum\Enum.java, enum\Advanced.java, enum\Advanced2.java 
-What are variable arguments?
-Cloning - Deep vs Shallow
-Stream
-Lambda Expressions
+##New Features in Java 5
+- TODO
 
-What is JavaDoc?
-What is Unit Testing?
-What is Continuous Integration?
-What is Maven?
+##New Features in Java 6
+- TODO
 
+##New Features in Java 7
+- TODO
 
-#Java Topics
- - [Abstract Class](docs/abstract-class.md)
- - [Arrays](docs/arrays.md)
+##New Features in Java 8
+- TODO
 
-#Java Interview Questions and Answers
+#Miscellaneous
 
-##Basics 
+##Annotations
+- TODO
+
+##Examples of Design Patterns used in Java
+- TODO
+
+##Reflection
+- TODO
+
+##Assert
+- [Example](src/main/java/com/in28minutes/java/others/assertexample/AssertExamples.java)
+
+##Garbage Collection and finalize
+- Programmer has no control (other than finalize request and System.gc call - both of which are bad practices)
+- This is a big change from C++
+- [Example](src/main/java/com/in28minutes/java/others/garbagecollection/GarbageCollectionExamples.java)
+
+##Which datatype should we use for financial calculations?
+- TODO
+
+##What is a Marker Interface?
+- TODO
+
+##Need for Serialization
+- [Example 1](src/main/java/com/in28minutes/java/serialization/SerializationExamples.java)
+- [Example 2](src/main/java/com/in28minutes/java/serialization/SerializationExamples2.java)
+- [Example 3](src/main/java/com/in28minutes/java/serialization/SerializationExamples3.java)
+
+##Why do we need an Enum?
+- [Basic Examples](src/main/java/com/in28minutes/java/enums/Enum.java)
+- [Advanced Examples 1](src/main/java/com/in28minutes/java/enums/EnumAdvanced.java)
+- [Advanced Examples 2](src/main/java/com/in28minutes/java/enums/EnumAdvanced2.java)
+
+##What are variable arguments?
+- [Example](src/main/java/com/in28minutes/java/varargs/VariableArgumentExamples.java)
+
+##Cloning - Deep vs Shallow
+- TODO
+
+##Stream
+- TODO
+
+##Lambda Expressions
+- TODO
+
+#Others
  - [Basics of Objects and Classes](docs/basics-class-object.md)
+ - [Arrays](docs/arrays.md)
  - [Variables - including initialization](docs/variables-initialization-and-more.md)
  - [Operators](docs/operators.md)
  - [Control Flow - If, Switch, for and while](docs/control-flow-if-switch-for-while)
- - [Enum](docs/enum.md)
- - [Exception Handling](docs/exception-handling.md)
  - [Files](docs/file-io.md)
- - [Generics](docs/generics.md)
- - [Inheritance and Polymorphism](docs/inheritance-and-polymorphism.md)
- - [Initializers](docs/initializers.md)
- - [Inner Classes](docs/inner-class.md)
- - [String, String Buffer and String Builder](docs/string-and-string-buffer-builder.md)
- - [Wrapper classes](docs/wrapper-classes.md)
- - [Arrays](docs/arrays.md)
-
-##Access and Non Access Modifiers
- - [Class Access Modifiers - Default, Public, Private and Protected](docs/modifiers-class-access.md)
- - [Member Access Modifiers](docs/modifiers-members-access.md)
- - [Final Modifier](docs/modifiers-nonaccess-final.md)
- - [Static Modifier](docs/modifiers-nonaccess-static)
-
-##OOPS
- - [Object and its Methods](docs/object-methods.md)
- - [Inheritance and Polymorphism](docs/inheritance-and-polymorphism.md)
- - [Abstract Class](docs/abstract-class.md)
- - [Interfaces](docs/interfaces.md)
- - [Constructors](docs/constructors.md)
- - [Initializers](docs/initializers.md)
- - [More about OOPS](docs/oops-advanced.md)
- - [Inner Classes](docs/inner-class.md)
- 
-##Advanced Stuff
- - [Collections](docs/collections.md)
- - [Enum](docs/enum.md)
- - [Exception Handling](docs/exception-handling.md)
- - [Files](docs/file-io.md)
- - [Generics](docs/generics.md)
- - [Variable Arguments](docs/variable-arguments.md)
- - [Assert](docs/others-assert.md)
- - [Date and Calendar](docs/others-date-calendar.md)
- - [Serialization](docs/serialization.md)
- - [Threads and Synchronization](docs/threads-and-synchronization.md)
- - [Others](docs/others.md)
 
 #Frameworks
 - [Web Application Basics](https://github.com/in28minutes/BasicWebServletsIn28Minutes)
