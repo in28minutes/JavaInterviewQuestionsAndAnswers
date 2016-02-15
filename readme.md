@@ -89,20 +89,27 @@
 - [Example 1](src/main/java/com/in28minutes/java/string/StringBufferBuilderExamples.java)
 
 #OOPS Basics
-Inheritance
+##Inheritance
 - Basics of Inheritance
 - Every Class Extends Object - See [Example](src/main/java/com/in28minutes/java/oops/inheritance/EveryClassExtendsObject.java)
 - [Example 1](src/main/java/com/in28minutes/java/oops/inheritance/InheritanceExamples.java)
-- Reuse Through Inheritance - [TestReuse.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/TestReuse.java) [Hero.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Hero.java) [Actor.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Actor.java)[Comedian.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Comedian.java)
-Method OverLoading
-- src/main/java/com/in28minutes/java/oops/inheritance/overloading
-Method OverRiding
-- src/main/java/com/in28minutes/java/oops/inheritance/overriding
-Interface
-- [Interfaces](docs/interfaces.md)
-- /src/main/java/com/in28minutes/java/oops/interfaces
-Java and Multiple Inheritance
-Abstract Class
+- Reuse Through Inheritance - [TestReuse.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/TestReuse.java) [Hero.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Hero.java) [Actor.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Actor.java) [Comedian.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Comedian.java)
+
+##Method Overloading
+- [Example](src/main/java/com/in28minutes/java/oops/inheritance/overloading/OverloadingRules.java)
+
+##Method Overriding
+- [Example](src/main/java/com/in28minutes/java/oops/inheritance/overriding/OverridingRules.java)
+
+##Interface
+- Basic Example : [Flyable](src/main/java/com/in28minutes/java/oops/interfaces/Flyable.java)
+ [Aeropane](src/main/java/com/in28minutes/java/oops/interfaces/Aeroplane.java) [Bird](src/main/java/com/in28minutes/java/oops/interfaces/Bird.java)
+- Rules and Examples : [Rules](src/main/java/com/in28minutes/java/oops/interfaces/IntefaceRules.java) [More Examples](src/main/java/com/in28minutes/java/oops/interfaces/InterfaceExamples.java)
+
+##Java and Multiple Inheritance
+- Java does not support multiple inheritance.
+- However, A class can implement multiple interfaces. But, thats not Multiple inheritance in my book.
+##Abstract Class
 - [Abstract Class](docs/abstract-class.md)
 Abstract Class vs Interface
 - TODO
