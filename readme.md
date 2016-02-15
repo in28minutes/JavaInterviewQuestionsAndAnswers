@@ -159,14 +159,18 @@
 - [Example](src/main/java/com/in28minutes/java/membermodifiers/nonaccess/StaticModifierExamples.java)
 
 #Constructors
+
 ##Constructors
 - [Example](src/main/java/com/in28minutes/java/object/constructors/ConstructorExamples.java)
+
 ##Static Initializers
 - [Example](src/main/java/com/in28minutes/java/initializers/InitializerExamples.java)
 
 #Collections
+
 ##Why do we need Collections?
 - Arrays are static in Size.
+
 ##Hierarchy of Collection Interface?
 - [Hierarchy](src/main/java/com/in28minutes/java/collections/CollectionHierarchy.java)
 
