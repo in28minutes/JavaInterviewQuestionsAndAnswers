@@ -102,6 +102,8 @@
 - [Example](src/main/java/com/in28minutes/java/oops/inheritance/overriding/OverridingRules.java)
 
 ##Interface
+- An interface is a contract: the guy writing the interface says, "hey, I accept things looking that way"
+- Interface represents common actions between Multiple Classes.
 - Basic Example : [Flyable](src/main/java/com/in28minutes/java/oops/interfaces/Flyable.java)
  [Aeropane](src/main/java/com/in28minutes/java/oops/interfaces/Aeroplane.java) [Bird](src/main/java/com/in28minutes/java/oops/interfaces/Bird.java)
 - Rules and Examples : [Rules](src/main/java/com/in28minutes/java/oops/interfaces/IntefaceRules.java) [More Examples](src/main/java/com/in28minutes/java/oops/interfaces/InterfaceExamples.java)
@@ -109,22 +111,44 @@
 ##Java and Multiple Inheritance
 - Java does not support multiple inheritance.
 - However, A class can implement multiple interfaces. But, thats not Multiple inheritance in my book.
+- An example of a class in the JDK that implements several interfaces is HashMap, which implements the interfaces Serializable, Cloneable, and Map<K, V>. By reading this list of interfaces, you can infer that an instance of HashMap (regardless of the developer or company who implemented the class) can be cloned, is serializable (which means that it can be converted into a byte stream; see the section Serializable Objects), and has the functionality of a map.
+
 ##Abstract Class
-- [Abstract Class](docs/abstract-class.md)
-Abstract Class vs Interface
-- TODO
-Polymorphism
+- Abstract Class uses Inheritance and hence is an implementation of IS-A relationship between classes.
+- If you want to provide common, implemented functionality among all implementations of your component, use an abstract class. Abstract classes allow you to partially implement your class.
+- Example - Animal, Cat, Dog
+- An example of an abstract class in the JDK is AbstractMap, which is part of the Collections Framework. Its subclasses (which include HashMap, TreeMap, and ConcurrentHashMap) share many methods (including get, put, isEmpty, containsKey, and containsValue) that AbstractMap defines.
+- [Another Example - Spring AbstractController] (https://github.com/spring-projects/spring-framework/blob/master/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/AbstractController.java)
+- [More Details](docs/abstract-class.md)
+
+##Abstract Class vs Interface
+- Real Difference - Apple vs Orange
+- Syntactical Differences For a Dumb Interviewer
+  - Methods and members of an abstract class can have any visibility.  All methods of an interface must be  public.
+  - A concrete child class of an Abstract Class must define all the abstract methods. An Abstract child class can have abstract methods. An interface extending another interface need not provide default implementation for methods inherited from the parent interface. 
+  - A child class can only extend a single class. An interface can extend multiple interfaces. A class can implement multiple interfaces.
+  - A child class can define abstract methods with the same or less restrictive visibility, whereas a class implementing an interface must define all interface methods as public
+
+##Polymorphism
 - [Polymorphism](docs/inheritance-and-polymorphism.md)
-Abstraction
-Encapsulation
-- See EncapsulationExample.java
-Inner Class
-- See /src/main/java/com/in28minutes/java/innerclass/InnerClassExamples.java
-- See /JavaInterviewGuide/src/main/java/com/in28minutes/java/innerclass/AnonymousClass.java
-Final Modifier
-- See FinalClass.java
-- See FinalMemberModifiersExample.java
-Member Access Modifiers
+
+##Abstraction
+- Base of all programming
+
+##Encapsulation
+- [Example](src/main/java/com/in28minutes/java/oops/encapsulation/EncapsulationExample.java)
+
+##Inner Class
+- [Example](src/main/java/com/in28minutes/java/innerclass/InnerClassExamples.java)
+- [Example](src/main/java/com/in28minutes/java/innerclass/AnonymousClass.java)
+
+#Access and Non Access Modifiers
+
+##Final Modifier
+- [Final Class](src/main/java/com/in28minutes/java/classmodifiers/nonaccess/finalclass/FinalClass.java)
+- [Final Member Variable](src/main/java/com/in28minutes/java/membermodifiers/nonaccess/FinalMemberModifiersExample.java)
+
+##Member Access Modifiers
 - See Package com.in28minutes.java.membermodifiers.access
 Class Access Modifiers
 - See Package com.in28minutes.java.classmodifiers.defaultaccess
