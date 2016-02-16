@@ -83,9 +83,9 @@
 ```
 
 ##String vs StringBuffer vs StringBuilder
-- String is Immutable
-- StringBuilder is not synchronized
-- Performance
+- Immutability : String
+- Thread Safety : String(immutable), StringBuffer
+- Performance : StringBuilder (especially when a number of modifications are made.)
 - [Example 1](src/main/java/com/in28minutes/java/string/StringBufferBuilderExamples.java)
 
 #OOPS Basics
@@ -94,11 +94,22 @@
 - Every Class Extends Object - See [Example](src/main/java/com/in28minutes/java/oops/inheritance/EveryClassExtendsObject.java)
 - [Example 1](src/main/java/com/in28minutes/java/oops/inheritance/InheritanceExamples.java)
 - Reuse Through Inheritance - [TestReuse.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/TestReuse.java) [Hero.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Hero.java) [Actor.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Actor.java) [Comedian.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Comedian.java)
+- Example in Java Api : HashMap & TreeMap extend AbstractMap. 
 
 ##Method Overloading
-- [Example](src/main/java/com/in28minutes/java/oops/inheritance/overloading/OverloadingRules.java)
+- Java Example
+  - Constructors
+  - public HashMap(int initialCapacity, float loadFactor)
+  - public HashMap() {
+  - public HashMap(int initialCapacity)
+  - Methods  
+  - public boolean addAll(Collection<? extends E> c)
+  - public boolean addAll(int index, Collection<? extends E> c)
+- [Rules](src/main/java/com/in28minutes/java/oops/inheritance/overloading/OverloadingRules.java)
 
 ##Method Overriding
+- Java Example
+  - HashMap public int size() overrides AbstractMap public int size()
 - [Example](src/main/java/com/in28minutes/java/oops/inheritance/overriding/OverridingRules.java)
 
 ##Interface
@@ -106,6 +117,7 @@
 - Interface represents common actions between Multiple Classes.
 - Basic Example : [Flyable](src/main/java/com/in28minutes/java/oops/interfaces/Flyable.java)
  [Aeropane](src/main/java/com/in28minutes/java/oops/interfaces/Aeroplane.java) [Bird](src/main/java/com/in28minutes/java/oops/interfaces/Bird.java)
+- Example in Java api : Map interface, Collection interface.
 - Rules and Examples : [Rules](src/main/java/com/in28minutes/java/oops/interfaces/IntefaceRules.java) [More Examples](src/main/java/com/in28minutes/java/oops/interfaces/InterfaceExamples.java)
 
 ##Java and Multiple Inheritance
@@ -117,13 +129,14 @@
 - Abstract Class uses Inheritance and hence is an implementation of IS-A relationship between classes.
 - If you want to provide common, implemented functionality among all implementations of your component, use an abstract class. Abstract classes allow you to partially implement your class.
 - Example - Animal, Cat, Dog
-- An example of an abstract class in the JDK is AbstractMap, which is part of the Collections Framework. Its subclasses (which include HashMap, TreeMap, and ConcurrentHashMap) share many methods (including get, put, isEmpty, containsKey, and containsValue) that AbstractMap defines.
+- An example of an abstract class in the JDK is AbstractMap, which is part of the Collections Framework. Its subclasses (which include HashMap, TreeMap, and ConcurrentHashMap) share many methods (including get, put, isEmpty, containsKey, and containsValue) that AbstractMap defines. 
+  - example abstract method : public abstract Set<Entry<K,V>> entrySet();
 - [Another Example - Spring AbstractController] (https://github.com/spring-projects/spring-framework/blob/master/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/AbstractController.java)
 - [More Details](docs/abstract-class.md)
 
 ##Abstract Class vs Interface
 - Real Difference - Apple vs Orange
-- Syntactical Differences For a Dumb Interviewer
+- Syntactical Differences
   - Methods and members of an abstract class can have any visibility.  All methods of an interface must be  public.
   - A concrete child class of an Abstract Class must define all the abstract methods. An Abstract child class can have abstract methods. An interface extending another interface need not provide default implementation for methods inherited from the parent interface. 
   - A child class can only extend a single class. An interface can extend multiple interfaces. A class can implement multiple interfaces.
@@ -134,6 +147,10 @@
 
 ##Abstraction
 - Base of all programming
+- Example:
+  - Consider simple statement : a = b + c;
+  - Add two values stored in two memory locations and store it into a third memory location.
+  - Actual operation involves registers, instruction sets, program counters etc. High level language we use abstracts those complex details.
 
 ##Encapsulation
 - [Example](src/main/java/com/in28minutes/java/oops/encapsulation/EncapsulationExample.java)
@@ -146,22 +163,28 @@
 
 ##Final Modifier
 - [Final Class](src/main/java/com/in28minutes/java/classmodifiers/nonaccess/finalclass/FinalClass.java)
+- Final Class examples : String, Integer, Double and other wrapper classes
 - [Final Member Variable](src/main/java/com/in28minutes/java/membermodifiers/nonaccess/FinalMemberModifiersExample.java)
+- Final Variable example : java.lang.Math.PI
+- Final Method example : java.lang.Math.PI
 
 ##Member Access Modifiers
 - [Examples](src/main/java/com/in28minutes/java/membermodifiers/access)
 
 ##Class Access Modifiers
 - [Examples](src/main/java/com/in28minutes/java/classmodifiers/)
-- TODO - A few classes missing here?????????????????
+- public - Accessible from everywhere.
+- private and protected cannot be used on a class. 
 
 ##Static Modifier
 - [Example](src/main/java/com/in28minutes/java/membermodifiers/nonaccess/StaticModifierExamples.java)
+- Examples in Java Api : Methods in Math class.
 
 #Constructors
 
 ##Constructors
 - [Example](src/main/java/com/in28minutes/java/object/constructors/ConstructorExamples.java)
+- Examples in Java Api : HashMap has 2 constructors
 
 ##Static Initializers
 - [Example](src/main/java/com/in28minutes/java/initializers/InitializerExamples.java)
@@ -169,7 +192,9 @@
 #Collections
 
 ##Why do we need Collections?
-- Arrays are static in Size.
+- Arrays are not resizable.
+- Java Collections Framework allows you to use the right data structure, because one size does not fit all.
+- Java Collections Framework provides the correct abstractions, List, Map, Set
 
 ##Hierarchy of Collection Interface?
 - [Hierarchy](src/main/java/com/in28minutes/java/collections/CollectionHierarchy.java)
@@ -202,24 +227,25 @@
 - [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
 
 ##Concurrency in Collections
-- TODO - More Code Examples
 - Synchronized collections are implemented using synchronized methods and synchronized blocks. Only one thread can executing any of the synchronized code at a given point in time. This places severe restrictions on the concurrency of threads – thereby affecting performance of the application. All the pre Java 5 synchronized collections (HashTable & Vector, for example) use this approach. Post Java 5, collections using new approaches to synchronization are available in Java. These are called concurrent collections. More details below.
+- When many threads are expected to access a given collection, a ConcurrentHashMap is normally preferable to a synchronized HashMap, and a ConcurrentSkipListMap is normally preferable to a synchronized TreeMap. A CopyOnWriteArrayList is preferable to a synchronized ArrayList when the expected number of reads and traversals greatly outnumber the number of updates to a list.
 - Copy on Write
   - All values in collection are stored in an internal immutable (not-changeable) array. A new array is created if there is any modification to the collection. 
   - Read operations are not synchronized. Only write operations are synchronized.
   - Copy on Write approach is used in scenarios where reads greatly out number write’s on a collection. CopyOnWriteArrayList & CopyOnWriteArraySet are implementations of this approach. Copy on Write collections are typically used in Subject – Observer scenarios, where the observers very rarely change. Most frequent operations would be iterating around the observers and notifying them.
-- Compare and Swap
-  - Compare and Swap is one of the new approaches (Java 5) introduced in java to handle synchronization.  In traditional approach, a method which modifies a member variable used by multiple threads is completely synchronized – to prevent other threads accessing stale value.  
-  - In compare and swap approach, instead of synchronizing entire method, the value of the member variable before calculation is cached. After the calculation, the cached value is compared with the current value of member variable. If the value is not modified, the calculated result is stored into the member variable. If another thread has modified the value, then the calculation can be performed again. Or skipped – as the need might be.
-  - ConcurrentLinkedQueue uses this approach. 
+  - Example : CopyOnWriteArrayList : public boolean add(E e)
 - Locks
+  - CopyOnWriteArrayList : final ReentrantLock lock = this.lock; 
   - When 10 methods are declared as synchronized, only one of them is executed by any of the threads at any point in time.  This has severe performance impact.  
   - Another new approach introduced in Java 5 is to use lock and unlock methods. Lock and unlock methods are used to divide methods into different blocks and help enhance concurrency. The 10 methods can be divided into different blocks, which can be synchronized based on different variables.
 
-##Fail Safe vs Fail Fast
-- TODO - Code Examples
-- Fail Fast Iterators throw a ConcurrentModificationException if there is a modification to the underlying collection is modified. This was the default behavior of the synchronized collections of pre Java 5 age.
-- Fail Safe Iterators do not throw exceptions even when there are changes in the collection. This is the default behavior of the concurrent collections, introduced since Java 5.
+##Concurrent Modification & Fail Safe vs Fail Fast
+- Concurrent Modification : Changes made to collection when one or more threads are iterating over it.
+- Fail Fast : Throws Concurrent Modification Exception if there are Concurrent Modifications
+- Fail Safe : Fail Safe Iterator makes copy of the internal data structure (object array) and iterates over the copied data structure. 
+- Fail Safe is efficient when traversal operations vastly outnumber mutations
+- [FailFast](src/main/java/com/in28minutes/java/collections/FailFast.java)
+- [FailSafe](src/main/java/com/in28minutes/java/collections/FailSafe.java)
 
 ##Atomic Operations
 - Atomic Access Java Tutorial states “In programming, an atomic action is one that effectively happens all at once. An atomic action cannot stop in the middle: it either happens completely, or it doesn't happen at all. No side effects of an atomic action are visible until the action is complete”.
@@ -249,9 +275,6 @@
 
 ## New Exception Handling Features
 - TODO - Code Examples
-
-## Puzzles on Exception Handling
-- TODO
 
 ## Hierarchy of Exception Related Classes
 - [Example 1](src/main/java/com/in28minutes/java/exceptionhandling/ExceptionHandlingExample1.java)
@@ -377,6 +400,10 @@ obj2.hashCode(). Two unequal objects MIGHT have the same hashCode.
 
 ##Lambda Expressions
 - TODO
+
+## 20 Puzzles to Test Yourselves
+- TODO
+
 
 #Others
  - [Basics of Objects and Classes](docs/basics-class-object.md)
