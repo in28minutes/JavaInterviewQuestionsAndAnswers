@@ -360,7 +360,45 @@ obj2.hashCode(). Two unequal objects MIGHT have the same hashCode.
 - TODO
 
 ##Examples of Design Patterns used in Java
-- TODO
+
+###Some Creational patterns
+- Factory method
+  - java.util.Calendar#getInstance()
+  - java.nio.charset.Charset#forName()
+- Prototype
+  - java.lang.Object#clone()
+- Singleton 
+  - java.lang.Runtime#getRuntime()
+  - java.lang.System#getSecurityManager()
+
+###Some Structural patterns
+- Adapter
+  - java.util.Arrays#asList()
+  - javax.xml.bind.annotation.adapters.XmlAdapter#marshal() and #unmarshal()
+
+- Decorator 
+  - All subclasses of java.io.InputStream, OutputStream etc.
+  - java.util.Collections : synchronizedXXX() and unmodifiableXXX() methods.
+
+- Flyweight
+  - java.lang.Integer#valueOf(int) (also on other Wrapper classes)
+
+###Behavioral patterns
+- Chain of responsibility 
+  - javax.servlet.Filter#doFilter()
+  - Exception Handling
+
+- Command 
+  - java.lang.Runnable
+
+- Iterator
+  - All implementations of java.util.Iterator
+
+- Strategy (recognizeable by behavioral methods in an abstract/interface type which invokes a method in an implementation of a different abstract/interface type which has been passed-in as method argument into the strategy implementation)
+  - java.util.Comparator#compare(), executed by among others Collections#sort().
+
+- Template method (recognizeable by behavioral methods which already have a "default" behaviour definied by an abstract type)
+  - All non-abstract methods of java.util.AbstractList, java.util.AbstractSet and java.util.AbstractMap.
 
 ##Reflection
 - TODO
