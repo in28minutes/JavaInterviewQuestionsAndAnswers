@@ -365,7 +365,9 @@ import java.io.File;
 import java.io.FileFilter;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 import org.junit.Test;
@@ -545,6 +547,12 @@ public class LambdaExpressionTest {
 	}
 
 	@Test
+	public void testCreationOfReusableFunction() {
+		final Function<Integer, Predicate<Student>> marksGreaterThan = minimumMarks -> student -> student
+				.getMarks() > minimumMarks;
+	}
+
+	@Test
 	public void testPrintStudentsWithMarksGreaterThanWithCustomCheckAndLambda() {
 		course.printStudentsSatisfyingCheck((Student student) -> student.getMarks() > 70 && student.getMarks() <= 90);
 	}
@@ -569,6 +577,14 @@ public class LambdaExpressionTest {
 	}
 
 	@Test
+	public void testPreviousFunctionWithStreams_findFirst() {
+		// Optional class is useful whenever the result may be absent.
+		Optional<Student> first = course.getStudents().stream()
+				.filter(student -> student.getMarks() > 70 && student.getMarks() <= 90).findFirst();
+		System.out.println(first.get());
+	}
+
+	@Test
 	public void compareStudentsUsingLambdas() {
 		// Behavior parameterization
 		course.getStudents().sort((Student s1, Student s2) -> Integer.compare(s1.getMarks(), s2.getMarks()));
@@ -578,3 +594,189 @@ public class LambdaExpressionTest {
 }
 
 ```
+
+StreamsTest
+```
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import org.junit.Test;
+
+public class StreamsTest {
+
+	@Test
+	public void streamsBasics_creatingAStream() {
+		List<String> list = Stream.of("Apple", "Banana", "Mango").collect(Collectors.toList());
+		assertEquals(Arrays.asList("Apple", "Banana", "Mango"), list);
+	}
+
+	@Test
+	public void streamsBasics_mappingAValueToAnother() {
+		List<String> collected = Stream.of("Apple", "Banana", "Mango").map(value -> value.toUpperCase())
+				.collect(Collectors.toList());
+
+		assertEquals(Arrays.asList("APPLE", "BANANA", "MANGO"), collected);
+	}
+
+	@Test
+	public void streamsBasics_filtering() {
+		List<String> initCaps = Stream.of("Apple", "Banana", "mango")
+				.filter(value -> Character.isUpperCase(value.charAt(0))).collect(Collectors.toList());
+
+		assertEquals(Arrays.asList("Apple", "Banana"), initCaps);
+	}
+
+	class Country {
+		private String name;
+		private long area;
+		private long population;
+		private String continent;
+
+		public Country(String name, long area, long population, String continent) {
+			super();
+			this.name = name;
+			this.area = area;
+			this.population = population;
+			this.continent = continent;
+		}
+
+		public String getName() {
+			return name;
+		}
+
+		public long getArea() {
+			return area;
+		}
+
+		public long getPopulation() {
+			return population;
+		}
+
+		public String getContinent() {
+			return continent;
+		}
+
+		@Override
+		public String toString() {
+			return "Country [name=" + name + ", area=" + area + ", population=" + population + ", continent="
+					+ continent + "]";
+		}
+
+	}
+
+	List<Country> countries = Arrays.asList(new Country("India", 10000, 20000, "Asia"),
+			new Country("China", 30000, 30000, "Asia"), new Country("USA", 40000, 10000, "North America"));
+
+	@Test
+	public void streamsBasics_min() {
+		Country smallestCountryInTheList = countries.stream().min(Comparator.comparing((Country c) -> c.getArea()))
+				.get();
+		assertEquals("India", smallestCountryInTheList.getName());
+	}
+
+	@Test
+	public void streamsBasics_max() {
+		Country largestCountryInTheList = countries.stream().max(Comparator.comparing((Country c) -> c.getArea()))
+				.get();
+		assertEquals("USA", largestCountryInTheList.getName());
+	}
+
+	@Test
+	public void streamsBasics_reduce() {
+		int count = Stream.of(100, 200, 300).reduce(0, (acc, element) -> acc + element);
+		assertEquals(600, count);
+	}
+
+	@Test
+	public void streamsBasics_namesOfCountriesWithAreaGreaterThan20000() {
+		List<String> countriesWithAreaGreaterThan20000 = countries.stream()
+				.filter((Country country) -> country.getArea() > 20000).map(c -> c.getName())
+				.collect(Collectors.toList());
+		assertEquals(Arrays.asList("China", "USA"), countriesWithAreaGreaterThan20000);
+	}
+
+	@Test
+	public void streamsBasics_namesOfCountriesWithAreaGreaterThan20000_methodReferences() {
+		List<String> countriesWithAreaGreaterThan20000 = countries.stream()
+				.filter((Country country) -> country.getArea() > 20000).map(Country::getName)
+				.collect(Collectors.toList());
+		assertEquals(Arrays.asList("China", "USA"), countriesWithAreaGreaterThan20000);
+	}
+
+	@Test
+	public void streamsBasics_max_methodReferences() {
+		Country largestCountryInTheList = countries.stream().max(Comparator.comparing(Country::getArea)).get();
+		assertEquals("USA", largestCountryInTheList.getName());
+	}
+
+	@Test
+	public void streamsBasics_group() {
+		Map<String, List<Country>> countriesGroupedByContinent = countries.stream()
+				.collect(Collectors.groupingBy(country -> country.getContinent()));
+		System.out.println(countriesGroupedByContinent.get("Asia"));
+	}
+
+	@Test
+	public void streamsBasics_groupAndCount() {
+		Map<String, Long> countOfCountriesInContinent = countries.stream()
+				.collect(Collectors.groupingBy(country -> country.getContinent(), Collectors.counting()));
+		assertEquals(2, countOfCountriesInContinent.get("Asia").longValue());
+	}
+
+	@Test
+	public void streamsBasics_partition() {
+		Map<Boolean, List<Country>> partitionBasedOnContinentAsiaOrNot = countries.stream()
+				.collect(Collectors.partitioningBy(country -> country.getContinent().equals("Asia")));
+		System.out.println(partitionBasedOnContinentAsiaOrNot.get(true));
+	}
+
+	@Test
+	public void streamsBasics_joinAsString() {
+		Map<Boolean, List<Country>> partitionBasedOnContinentAsiaOrNot = countries.stream()
+				.collect(Collectors.partitioningBy(country -> country.getContinent().equals("Asia")));
+
+		List<Country> countriesInAsia = partitionBasedOnContinentAsiaOrNot.get(true);
+		String joinedByComma = countriesInAsia.stream().map(Country::getName)
+				.collect(Collectors.joining(",", "[", "]"));
+		assertEquals("[India,China]", joinedByComma);
+	}
+
+	List<Integer> values = new ArrayList<>();
+
+	{
+		for (int i = 1; i < 10000000; i++) {
+			values.add(i);
+		}
+	}
+
+	@Test
+	public void streamsBasics_performance_parallelStream() {
+		int sum = values.parallelStream().mapToInt(i -> i).sum();
+		System.out.println(sum);
+	}
+
+	@Test
+	public void streamsBasics_performance_stream() {
+		int sum = values.stream().mapToInt(i -> i).sum();
+		System.out.println(sum);
+	}
+
+	@Test
+	public void streamsBasics_performance_loop() {
+		int sum = 0;
+		for (int value : values)
+			sum += value;
+		System.out.println(sum);
+	}
+}
+
+```
+
