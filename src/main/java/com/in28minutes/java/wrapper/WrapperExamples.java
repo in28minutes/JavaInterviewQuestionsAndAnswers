@@ -9,6 +9,10 @@ public class WrapperExamples {
 		// Wrapper classes are final
 
 		Integer number = new Integer(55);// int
+
+		Integer value = 10;
+		value = value + 1;
+
 		Integer number2 = new Integer("55");// String
 
 		Float number3 = new Float(55.0);// double argument
@@ -31,6 +35,23 @@ public class WrapperExamples {
 
 		// Wrapper Objects are immutable (like String)
 
+		int i = 5;
+		i = 6;
+		i = 7;
+
+		//Immutability
+		//Wrapper Classes and String
+		Integer integer = 6;
+		integer = 7;
+
+		//#########
+		//#   6   #
+		//#########
+
+		//#########
+		//#   7   #
+		//#########
+
 		// valueOfMethods
 		// Provide another way of creating a Wrapper Object
 		Integer seven = Integer.valueOf("111", 2);// binary 111 is converted to
@@ -40,7 +61,7 @@ public class WrapperExamples {
 														// variable
 
 		// xxxValue methods help in creating primitives
-		Integer integer = Integer.valueOf(57);
+		//Integer integer = Integer.valueOf(57);
 		int primitive = seven.intValue();// 57
 		float primitiveFloat = seven.floatValue();// 57.0f
 
@@ -56,6 +77,7 @@ public class WrapperExamples {
 		int hundredPrimitive = Integer.parseInt("100");// 100 is stored in
 														// variable
 
+		//Creates new Integer object
 		Integer wrapperEight = new Integer(8);
 
 		// Normal static toString method
