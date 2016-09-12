@@ -1,5 +1,5 @@
-package com.in28minutes.java.innerclass;
 
+package com.in28minutes.java.innerclass;
 class OuterClass {
 	private int outerClassInstanceVariable;
 

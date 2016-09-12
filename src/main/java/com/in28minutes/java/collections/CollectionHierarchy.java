@@ -284,7 +284,8 @@ interface BlockingQueue<E> extends Queue<E> {
 	int drainTo(Collection<? super E> c, int maxElements);
 }
 
-//The elements of the priority queue are ordered according to their natural ordering
+//The elements of the priority queue are ordered 
+//according to their natural ordering
 class PriorityQueue /* implements Queue */{
 	// sorted - natural order
 
@@ -300,6 +301,7 @@ class ArrayBlockingQueue /*implements BlockingQueue*/{
 
 class LinkedBlockingQueue /*implements BlockingQueue*/{
 	//uses Linked List - optionally-bounded
+	
 	//Linked queues typically have higher throughput than array-based queues but
 	//less predictable performance in most concurrent applications.
 }

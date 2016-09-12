@@ -6,7 +6,7 @@ class Calculator extends Thread {
 	public void run() {
 		synchronized (this) {
 			for (int i = 0; i < 1000000; i++) {
-				sum += i;
+				sum += i;//499999500000
 			}
 			notify();
 		}
