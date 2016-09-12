@@ -273,6 +273,12 @@ Available in the resources for the course
 - 223 . What are the new features in Java 7?
 - 224 . What are the new features in Java 8?
 
+###What you can do next?
+- [Design Patterns] (https://www.youtube.com/watch?v=f5Rzr5mVNbY)
+- [Maven] (https://www.youtube.com/watch?v=0CFWeVgzsqY)
+- [JSP Servlets] (https://www.youtube.com/watch?v=Vvnliarkw48)
+- [Spring MVC] (https://www.youtube.com/watch?v=BjNhGaZDr0Y)
+
 ###Useful Links
 - [Our Website](http://www.in28minutes.com)
 - [Youtube Courses](https://www.youtube.com/user/rithustutorials/playlists)

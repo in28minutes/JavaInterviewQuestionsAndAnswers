@@ -10,15 +10,20 @@ public class LambdaExpressionsTest {
 	@Test
 	public void sumOfOddNumbers_Usual() {
 		List<Integer> numbers = Arrays.asList(1, 3, 4, 6, 2, 7);
-		int sum = 0;
+		
+		int sum = 0; 
+		
 		for (int number : numbers)
 			if (number % 2 != 0)
-				sum += number;
+				sum += number; 
+		
 		assertEquals(11, sum);
 	}
 
+	//No changes to state
 	@Test
 	public void sumOfOddNumbers_FunctionalProgrammingExample() {
+		
 		List<Integer> numbers = Arrays.asList(1, 3, 4, 6, 2, 7);
 
 		int sum = numbers.stream() // Create Stream
@@ -40,8 +45,12 @@ public class LambdaExpressionsTest {
 				.forEach(number -> System.out.print(number)); //Consumer
 		// 137
 	}
-
+	
 	static boolean isOdd(int number) {
 		return number % 2 != 0;
 	}
+	
+	int i = 1_000_000;
+	//.map(String::toLowerCase)
+	//.map(s -> String.toLowerCase(s))
 }
