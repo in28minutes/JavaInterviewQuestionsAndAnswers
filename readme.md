@@ -1,24 +1,24 @@
-#Java Interview Questions and Answers
+# Java Interview Questions and Answers
 
-##Expectations
+## Expectations
 - Good Java Knowledge
 
-##Things You Need to Know
+## Things You Need to Know
 
-###Github Repository
+###  Github Repository
 https://github.com/in28minutes/JavaInterviewQuestionsAndAnswers
 
-###PDF Guide
+### PDF Guide
 Available in the resources for the course
 
-###Installing Eclipse, Java and Maven
+### Installing Eclipse, Java and Maven
 - PDF : https://github.com/in28minutes/SpringIn28Minutes/blob/master/InstallationGuide-JavaEclipseAndMaven_v2.pdf
 - Video : https://www.youtube.com/watch?v=DLPjCZ5n_SM
 
 
-##Interview Questions
+## Interview Questions
 
-###Java Platform
+### Java Platform
 - 1 . Why is Java so popular?
 - 2 . What is platform independence?
 - 3 . What is bytecode?
@@ -26,7 +26,7 @@ Available in the resources for the course
 - 5 . What are the important differences between C++ and Java?
 - 6 . What is the role for a classloader in Java?
 
-###Wrapper Classes
+### Wrapper Classes
 - 7 . What are Wrapper classes?
 - 8 . Why do we need Wrapper classes in Java?
 - 9 . What are the different ways of creating Wrapper class instances?
@@ -37,7 +37,7 @@ Available in the resources for the course
 - 14 . What is implicit casting?
 - 15 . What is explicit casting?
 
-###Strings
+### Strings
 - 16 . Are all String’s immutable?
 - 17 . Where are String values stored in memory?
 - 18 . Why should you be careful about String concatenation(+) operator in loops?
@@ -46,7 +46,7 @@ Available in the resources for the course
 - 21 . What are differences between StringBuilder and StringBuffer?
 - 22 . Can you give examples of different utility methods in String class?
 
-###Object oriented programming basics
+### Object oriented programming basics
 - 23 . What is a class?
 - 24 . What is an object?
 - 25 . What is state of an object?
@@ -80,7 +80,7 @@ Available in the resources for the course
 - 53 . Can a constructor be called directly from a method?
 - 54 . Is a super class constructor called even when there is no explicit call from a sub class constructor?
 
-###Advanced object oriented concepts
+### Advanced object oriented concepts
 - 55 . What is polymorphism?
 - 56 . What is the use of instanceof operator in Java?
 - 57 . What is coupling?
@@ -91,7 +91,7 @@ Available in the resources for the course
 - 62 . Can you create an inner class inside a method?
 - 63 . What is an anonymous class?
 
-###Modifiers
+### Modifiers
 - 64 . What is default class modifier?
 - 65 . What is private access modifier?
 - 66 . What is default or package access modifier?
@@ -108,7 +108,7 @@ Available in the resources for the course
 - 77 . What happens when a variable is marked as volatile?
 - 78 . What is a static variable?
 
-###conditions & loops
+### conditions & loops
 - 79 . Why should you always use blocks around if statement?
 - 80 . Guess the output
 - 81 . Guess the output
@@ -122,7 +122,7 @@ Available in the resources for the course
 - 89 . What is the output of the program below?
 - 90 . What is the output of the program below?
 
-###Exception handling
+### Exception handling
 - 91 . Why is exception handling important?
 - 92 . What design pattern is used to implement exception handling features in most languages?
 - 93 . What is the need for finally block?
@@ -142,7 +142,7 @@ Available in the resources for the course
 - 107 . How does try with resources work?
 - 108 . Can you explain a few exception handling best practices?
 
-###Miscellaneous topics
+### Miscellaneous topics
 - 109 . What are the default values in an array?
 - 110 . How do you loop around an array using enhanced for loop?
 - 111 . How do you print the content of an array?
@@ -169,7 +169,7 @@ Available in the resources for the course
 - 132 . Are the constructors in an object invoked when it is de-serialized?
 - 133 . Are the values of static variables stored when an object is serialized?
 
-###Collections
+### Collections
 - 134 . Why do we need collections in Java?
 - 135 . What are the important interfaces in the collection hierarchy?
 - 136 . What are the important methods that are declared in the collection interface?
@@ -204,7 +204,7 @@ Available in the resources for the course
 - 165 . Can you give an example of implementation of navigableMap interface?
 - 166 . What are the static methods present in the collections class?
 
-###Advanced collections
+### Advanced collections
 - 167 . What is the difference between synchronized and concurrent collections in Java?
 - 168 . Explain about the new concurrent collections in Java?
 - 169 . Explain about copyonwrite concurrent collections approach?
@@ -217,7 +217,7 @@ Available in the resources for the course
 - 176 . What are atomic operations in Java?
 - 177 . What is BlockingQueue in Java?
 
-###Generics
+### Generics
 - 178 . What are Generics?
 - 179 . Why do we need Generics? Can you give an example of how Generics make a program more flexible?
 - 180 . How do you declare a generic class?
@@ -226,7 +226,7 @@ Available in the resources for the course
 - 183 . How can we restrict Generics to a super class of particular class?
 - 184 . Can you give an example of a generic method?
 
-###Multi threading
+### Multi threading
 - 185 . What is the need for threads in Java?
 - 186 . How do you create a thread?
 - 187 . How do you create a thread by extending thread class?
@@ -251,7 +251,7 @@ Available in the resources for the course
 - 206 . What is the use of notifyall method?
 - 207 . Can you write a synchronized program with wait and notify methods?
 
-###Functional Programming - Lamdba expressions and Streams
+### Functional Programming - Lamdba expressions and Streams
 - 208 . What is functional programming?
 - 209 . Can you give an example of functional programming?
 - 210 . What is a stream?
@@ -267,19 +267,19 @@ Available in the resources for the course
 - 219 . What is a consumer?
 - 220 . Can you give examples of functional interfaces with multiple arguments?
 
-### New Features
+###  New Features
 - 221 . What are the new features in Java 5?
 - 222 . What are the new features in Java 6?
 - 223 . What are the new features in Java 7?
 - 224 . What are the new features in Java 8?
 
-###What you can do next?
+### What you can do next?
 - [Design Patterns] (https://www.youtube.com/watch?v=f5Rzr5mVNbY)
 - [Maven] (https://www.youtube.com/watch?v=0CFWeVgzsqY)
 - [JSP Servlets] (https://www.youtube.com/watch?v=Vvnliarkw48)
 - [Spring MVC] (https://www.youtube.com/watch?v=BjNhGaZDr0Y)
 
-### Other Courses
+###  Other Courses
 
 - [Most Watched Courses on YouTube - 30,000 Subscribers](https://www.youtube.com/watch?v=bNFoN956P2A&list=PLBBog2r6uMCQhZaQ9vUT5zJWXzz-f49k1)
 - [25 Videos and Articles for Beginners on Spring Boot](http://www.springboottutorial.com/spring-boot-tutorials-for-beginners)
@@ -294,7 +294,7 @@ Available in the resources for the course
   * [Java OOPS in 1 Hours](https://www.udemy.com/learn-object-oriented-programming-in-java/?couponCode=OOPS-GIT)
   * [C Puzzle for Interview](https://www.udemy.com/c-puzzles-for-beginners/?couponCode=CPUZZLES-GIT)
   
-### Useful Links
+###  Useful Links
 - [Our Website](http://www.in28minutes.com)
 - [Facebook](http://facebook.com/in28minutes)
 - [Twitter](http://twitter.com/in28minutes)
