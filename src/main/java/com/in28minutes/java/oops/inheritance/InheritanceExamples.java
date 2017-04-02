@@ -21,7 +21,7 @@ class Cat extends Animal {
 
 public class InheritanceExamples {
 	public static void main(String[] args) {
-		Animal animal = new Cat();
+		Animal animal = new Dog();
 		System.out.println(animal.bark());
 	}
 }
