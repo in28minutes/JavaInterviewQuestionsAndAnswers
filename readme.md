@@ -13,7 +13,8 @@ Available in the resources for the course
 
 ### Installing Eclipse, Java and Maven
 - PDF : https://github.com/in28minutes/SpringIn28Minutes/blob/master/InstallationGuide-JavaEclipseAndMaven_v2.pdf
-- Video : https://www.youtube.com/watch?v=DLPjCZ5n_SM
+- Video : https://www.youtube.com/playlist?list=PLBBog2r6uMCSmMVTW_QmDLyASBvovyAO3
+- GIT Repository : https://github.com/in28minutes/getting-started-in-5-steps
 
 
 ## Interview Questions
