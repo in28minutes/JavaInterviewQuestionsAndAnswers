@@ -276,13 +276,13 @@ Available in the resources for the course
 
 ### What you can do next?
 - [Design Patterns] (https://www.youtube.com/watch?v=f5Rzr5mVNbY)
-- [Maven] (https://www.youtube.com/watch?v=0CFWeVgzsqY)
+- [Maven] (https://courses.in28minutes.com/p/maven-tutorial-for-beginners-in-5-steps)
 - [JSP Servlets] (https://www.youtube.com/watch?v=Vvnliarkw48)
 - [Spring MVC] (https://www.youtube.com/watch?v=BjNhGaZDr0Y)
 
 ###  Other Courses
 
-- [Most Watched Courses on YouTube - 30,000 Subscribers](https://www.youtube.com/watch?v=bNFoN956P2A&list=PLBBog2r6uMCQhZaQ9vUT5zJWXzz-f49k1)
+- [Check out all our courses with 100,000 Students](https://courses.in28minutes.com/courses)
 - [25 Videos and Articles for Beginners on Spring Boot](http://www.springboottutorial.com/spring-boot-tutorials-for-beginners)
 - Our Best Courses with 66,000 Students and 4,000 5-Star Ratings
   * [First Web Application with Spring Boot](https://www.udemy.com/spring-boot-first-web-application/?couponCode=SPRING-BOOT-1-GIT)
