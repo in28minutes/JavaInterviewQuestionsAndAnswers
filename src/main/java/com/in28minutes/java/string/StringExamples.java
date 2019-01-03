@@ -55,7 +55,7 @@ public class StringExamples {
 
 		// All characters from index paramInt
 		// String substring(int paramInt)
-		System.out.println("abcdefghij".substring(3)); // cdefghij
+		System.out.println("abcdefghij".substring(3)); // defghij
 		// 0123456789
 
 		// All characters from index 3 to 6
