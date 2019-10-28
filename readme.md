@@ -4,7 +4,7 @@
 - Good Java Knowledge
 
 ## Complete Course Link
-- https://www.udemy.com/java-interview-questions-and-answers/?couponCode=IN28MINUTES
+- https://www.udemy.com/course/java-interview-questions-and-answers/?couponCode=OCTOBER-2019
 
 ## Things You Need to Know
 
@@ -288,15 +288,15 @@ Available in the resources for the course
 - [Check out all our courses with 100,000 Students](https://courses.in28minutes.com/courses)
 - [25 Videos and Articles for Beginners on Spring Boot](http://www.springboottutorial.com/spring-boot-tutorials-for-beginners)
 - Our Best Courses with 66,000 Students and 4,000 5-Star Ratings
-  * [First Web Application with Spring Boot](https://www.udemy.com/spring-boot-first-web-application/?couponCode=SPRING-BOOT-1-GIT)
-  * [Spring Boot Tutorial For Beginners](https://www.udemy.com/spring-boot-tutorial-for-beginners/?couponCode=SPRING-BOOT-GIT)
-  * [Mockito Tutorial : Learn mocking with 25 Junit Examples](https://www.udemy.com/mockito-tutorial-with-junit-examples/?couponCode=MOCKITO_GIT)
-  * [Java EE Made Easy - Patterns, Architecture and Frameworks](https://www.udemy.com/java-ee-design-patterns-architecture-and-frameworks/?couponCode=EEPATTERNS-GIT)
-  * [Spring MVC For Beginners : Build Java Web App in 25 Steps](https://www.udemy.com/spring-mvc-tutorial-for-beginners-step-by-step/?couponCode=SPRINGMVC-GIT)
-  * [JSP Servlets For Beginners : Build Java Web App in 25 Steps](https://www.udemy.com/learn-java-servlets-and-jsp-web-application-in-25-steps/?couponCode=JSPSRVLT-GIT)
-  * [Maven Tutorial - Manage Java Dependencies in 25 Steps](https://www.udemy.com/learn-maven-java-dependency-management-in-20-steps/?couponCode=MAVEN_GIT)
-  * [Java OOPS in 1 Hours](https://www.udemy.com/learn-object-oriented-programming-in-java/?couponCode=OOPS-GIT)
-  * [C Puzzle for Interview](https://www.udemy.com/c-puzzles-for-beginners/?couponCode=CPUZZLES-GIT)
+  * [First Web Application with Spring Boot](https://www.udemy.com/course/spring-boot-first-web-application/?couponCode=OCTOBER-2019)
+  * [Spring Boot Tutorial For Beginners](https://www.udemy.com/course/spring-boot-tutorial-for-beginners/?couponCode=OCTOBER-2019)
+  * [Mockito Tutorial : Learn mocking with 25 Junit Examples](https://www.udemy.com/course/mockito-tutorial-with-junit-examples/?couponCode=OCTOBER-2019)
+  * [Java EE Made Easy - Patterns, Architecture and Frameworks](https://www.udemy.com/course/java-ee-design-patterns-architecture-and-frameworks/?couponCode=OCTOBER-2019)
+  * [Spring MVC For Beginners : Build Java Web App in 25 Steps](https://www.udemy.com/course/spring-mvc-tutorial-for-beginners-step-by-step/?couponCode=OCTOBER-2019)
+  * [JSP Servlets For Beginners : Build Java Web App in 25 Steps](https://www.udemy.com/course/learn-java-servlets-and-jsp-web-application-in-25-steps/?couponCode=OCTOBER-2019)
+  * [Maven Tutorial - Manage Java Dependencies in 25 Steps](https://www.udemy.com/course/learn-maven-java-dependency-management-in-20-steps/?couponCode=OCTOBER-2019)
+  * [Java OOPS in 1 Hours](https://www.udemy.com/course/learn-object-oriented-programming-in-java/?couponCode=OCTOBER-2019)
+  * [C Puzzle for Interview](https://www.udemy.com/course/c-puzzles-for-beginners/?couponCode=OCTOBER-2019)
   
 ###  Useful Links
 - [Our Website](http://www.in28minutes.com)
