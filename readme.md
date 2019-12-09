@@ -1,10 +1,13 @@
 # Java Interview Questions and Answers
 
+[![Image](https://www.springboottutorial.com/images/Course-Java-Interview-Guide-200-Interview-Questions-and-Answers.png "Java Interview Guide : 200+ Interview Questions and Answers")](https://www.udemy.com/course/java-interview-questions-and-answers/)
+
+
 ## Expectations
 - Good Java Knowledge
 
 ## Complete Course Link
-- https://www.udemy.com/course/java-interview-questions-and-answers/?couponCode=OCTOBER-2019
+- https://www.udemy.com/course/java-interview-questions-and-answers/?couponCode=NOVEMBER-2019
 
 ## Things You Need to Know
 
@@ -283,23 +286,13 @@ Available in the resources for the course
 - [JSP Servlets] (https://www.youtube.com/watch?v=Vvnliarkw48)
 - [Spring MVC] (https://www.youtube.com/watch?v=BjNhGaZDr0Y)
 
-###  Other Courses
+### Troubleshooting
+- Refer our TroubleShooting Guide - https://github.com/in28minutes/in28minutes-initiatives/tree/master/The-in28Minutes-TroubleshootingGuide-And-FAQ
 
-- [Check out all our courses with 100,000 Students](https://courses.in28minutes.com/courses)
-- [25 Videos and Articles for Beginners on Spring Boot](http://www.springboottutorial.com/spring-boot-tutorials-for-beginners)
-- Our Best Courses with 66,000 Students and 4,000 5-Star Ratings
-  * [First Web Application with Spring Boot](https://www.udemy.com/course/spring-boot-first-web-application/?couponCode=OCTOBER-2019)
-  * [Spring Boot Tutorial For Beginners](https://www.udemy.com/course/spring-boot-tutorial-for-beginners/?couponCode=OCTOBER-2019)
-  * [Mockito Tutorial : Learn mocking with 25 Junit Examples](https://www.udemy.com/course/mockito-tutorial-with-junit-examples/?couponCode=OCTOBER-2019)
-  * [Java EE Made Easy - Patterns, Architecture and Frameworks](https://www.udemy.com/course/java-ee-design-patterns-architecture-and-frameworks/?couponCode=OCTOBER-2019)
-  * [Spring MVC For Beginners : Build Java Web App in 25 Steps](https://www.udemy.com/course/spring-mvc-tutorial-for-beginners-step-by-step/?couponCode=OCTOBER-2019)
-  * [JSP Servlets For Beginners : Build Java Web App in 25 Steps](https://www.udemy.com/course/learn-java-servlets-and-jsp-web-application-in-25-steps/?couponCode=OCTOBER-2019)
-  * [Maven Tutorial - Manage Java Dependencies in 25 Steps](https://www.udemy.com/course/learn-maven-java-dependency-management-in-20-steps/?couponCode=OCTOBER-2019)
-  * [Java OOPS in 1 Hours](https://www.udemy.com/course/learn-object-oriented-programming-in-java/?couponCode=OCTOBER-2019)
-  * [C Puzzle for Interview](https://www.udemy.com/course/c-puzzles-for-beginners/?couponCode=OCTOBER-2019)
-  
-###  Useful Links
-- [Our Website](http://www.in28minutes.com)
-- [Facebook](http://facebook.com/in28minutes)
-- [Twitter](http://twitter.com/in28minutes)
-- [Google Plus](https://plus.google.com/u/3/110861829188024231119)
+## Youtube Playlists - 500+ Videos
+
+[Click here - 30+ Playlists with 500+ Videos on Spring, Spring Boot, REST, Microservices and the Cloud](https://www.youtube.com/user/rithustutorials/playlists?view=1&sort=lad&flow=list)
+
+## Keep Learning in28Minutes
+
+in28Minutes is creating amazing solutions for you to learn Spring Boot, Full Stack and the Cloud - Docker, Kubernetes, AWS, React, Angular etc. - [Check out all our courses here](https://github.com/in28minutes/learn)
