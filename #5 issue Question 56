@@ -1,0 +1,19 @@
+As the question says:
+for (int i	=	0,j	=	0;	i	<	10;	i++,j--)	{
+				System.out.print(j);
+}
+Code	Output
+0123456789
+
+But if we do dry run for this code:
+This code initializes two variables, i and j, both starting with a value of 0. The loop runs as long as i is less than 10, and in each iteration, i is incremented (i++) and j is decremented (j--). The System.out.print(j) statement prints the current value of j in each iteration.
+
+Now let's trace the loop:
+Iteration 1: i=0, j=0 (prints 0)
+Iteration 2: i=1, j=-1 (prints -1)
+Iteration 3: i=2, j=-2 (prints -2)
+... and so on.
+The correct output should be: 0-1-2-3-4-5-6-7-8-9
+
+So, the correct output does not match the provided "0123456789". The correct output includes negative numbers because j is being decremented in each iteration.
+There is a printing issue provided inside the pdf.
