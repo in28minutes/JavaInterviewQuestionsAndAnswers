@@ -123,7 +123,7 @@ Available in the resources for the course
 - 83 . Guess the output of this switch block?
 - 84 . Should default be the last case in a switch statement?
 - 85 . Can a switch statement be used around a String
-- 86 . Guess the output of this for loop
+- 86 . Guess the output of this for loop (P.S. there is an error as the output of given question should be 0-1-2-3-4-5-6-7-8-9. So please ignore that.)
 - 87 . What is an enhanced for loop?
 - 88 . What is the output of the for loop below?
 - 89 . What is the output of the program below?
