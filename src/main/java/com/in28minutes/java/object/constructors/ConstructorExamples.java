@@ -5,7 +5,7 @@ class Animal {
 
 	public Animal(String name) {
 		this.name = name;
-		System.out.println("Animal Constructor with name");
+		System.out.println("Animal Constructor with name " + name);
 	}
 }
 
