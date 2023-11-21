@@ -66,7 +66,7 @@ Available in the resources for the course
 - 32 . Explain inheritance with examples . 
 - 33 . What is method overloading?
 - 34 . What is method overriding?
-- 35 . Can super class reference variable can hold an object of sub class?
+- 35 . Can super class reference variable hold an object of sub class?
 - 36 . Is multiple inheritance allowed in Java?
 - 37 . What is an interface?
 - 38 . How do you define an interface?
